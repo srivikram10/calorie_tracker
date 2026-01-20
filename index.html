@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calorie Tracker</title>
+
+    <link rel="stylesheet" href="C:\calorie_tracker\static\style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>🍎 Calorie Tracking App</h1>
+
+<form id="intakeForm">
+    <label>Food:</label>
+    <select name="food_id">
+        {% for food in foods %}
+        <option value="{{ food.id }}">{{ food.name }}</option>
+        {% endfor %}
+    </select>
+
+    <label>Quantity (grams):</label>
+    <input type="number" name="quantity" required>
+
+    <button type="submit">Add Intake</button>
+</form>
+
+<p id="alert"></p>
+
+<h2>Daily Intake</h2>
+<canvas id="dailyChart"></canvas>
+
+<h2>Weekly Intake</h2>
+<canvas id="weeklyChart"></canvas>
+
+<h2>Monthly Intake</h2>
+<canvas id="monthlyChart"></canvas>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
