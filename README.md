@@ -34,20 +34,20 @@ The application helps users record daily food intake, monitor calorie limits, an
 
 calorie-tracking-app/
 │
-├── app.py                    # Main Flask application
-├── database.sql              # SQL script to create tables and insert food data
-├── calorie.db               # SQLite database (auto-created)
-├── requirements.txt          # Python dependencies
+├── app.py                   
+├── database.sql              
+├── calorie.db             
+├── requirements.txt          
 │
-├── templates/                # HTML templates
-│   └── index.html            # Main UI page
+├── templates/                
+│   └── index.html            
 │
-├── static/                   # Static assets
+├── static/                   
 │   ├── css/
-│   │   └── style.css         # Application styling
-│   │
+│   │   └── style.css         
 │   └── js/
-│       └── script.js         # Frontend logic & Chart.js graphs
+│       └── script.js         
 │
 └── README.md                 # Project documentation
+
 
